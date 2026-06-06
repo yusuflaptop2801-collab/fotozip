@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoZip - Kompres Foto Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>📸 FotoZip</h1>
+
+        <p class="subtitle">
+            Kompres foto JPG, PNG, dan WebP secara gratis
+        </p>
+
+        <input type="file" id="imageInput">
+
+        <br><br>
+
+        <img id="preview" width="300" style="display:none; border-radius:10px;">
+
+        <br><br>
+
+        <label>Kualitas Kompres</label>
+
+        <br>
+
+        <input type="range" id="quality" min="10" max="100" value="70">
+
+        <p id="qualityValue">70%</p>
+
+        <button id="compressBtn">
+            🚀 Kompres Foto
+        </button>
+
+        <p id="result"></p>
+
+        <a id="downloadLink" style="display:none;">
+            <button>
+                ⬇️ Download Hasil
+            </button>
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
